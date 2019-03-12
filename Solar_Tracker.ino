@@ -2,12 +2,12 @@
 //defining Servos
 Servo servohori;
 int servoh = 0;
-int servohLimitHigh = 160;
-int servohLimitLow = 20;
+int servohLimitHigh = 140;
+int servohLimitLow = 10;
 
 Servo servoverti; 
 int servov = 0; 
-int servovLimitHigh = 160;
+int servovLimitHigh = 120;
 int servovLimitLow = 20;
 //Assigning LDRs
 int ldrtopl = 2; //top left LDR green
@@ -18,9 +18,9 @@ int ldrbotr = 0; // bottom right LDR orange
  void setup () 
  {
   servohori.attach(10);
-  servohori.write(0);
+  servohori.write(10);
   servoverti.attach(9);
-  servoverti.write(0);
+  servoverti.write(20);
   delay(500);
  }
 
